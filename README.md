@@ -54,7 +54,7 @@ It contains all the function useful to create the form and manage the input. The
 ## sampleTariff.xslx
 The file Excel is divided in two sheets: private tariff and SSN (= NHS for UK) tariff. Every sheet has a list of exemplicative tariffs and their percentage of discount. 
 For example in the second row of Privato sheet we have:
-ID TARIFFARIO: tariff id - 2
-NOME TARIFFARIO: tariff name - Privato Scontato 20% (Discounted Private Tariff)
-REGOLA DI SCONTO: discount rule - 80% (so the user will have the 20% off the full price)
+- ID TARIFFARIO: tariff id - 2
+- NOME TARIFFARIO: tariff name - Privato Scontato 20% (Discounted Private Tariff)
+- REGOLA DI SCONTO: discount rule - 80% (so the user will have the 20% off the full price)
 Note: I didn't change the label, leaving them in italian.
