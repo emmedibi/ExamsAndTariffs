@@ -51,7 +51,7 @@ I created this mapping file for keeping track of the tariff requested by the use
 ### helpers.py
 It contains all the function useful to create the form and manage the input. The main function is called "createForm" and draws the form window. The other principal function is "submit", that sends the data to "createDataForExcel" function of the excelCreation package. If something goes wrong, the function returns an error window, otherwise the function terminates correctly displaying a information message that ends the application.
 
-##sampleTariff.xslx
+## sampleTariff.xslx
 The file Excel is divided in two sheets: private tariff and SSN (= NHS for UK) tariff. Every sheet has a list of exemplicative tariffs and their percentage of discount. 
 For example in the second row of Privato sheet we have:
 ID TARIFFARIO: tariff id - 2
