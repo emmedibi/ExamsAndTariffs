@@ -38,6 +38,7 @@ This file contains all the logic of the library. It consists in four functions:
 - calculatePrice: simply calculates tariffs based by the sale rules
 - createExcelFileForNewExam: creates the output file that contains all the tariffs for the exam requested by the user
 - createDataForExcel: structures and verifies tha data that receives from the user's input
+- I used `openpyxl`library to manage the excel files and sheets.
 ## gui package
 The package has the classic python package structure:
 - __init__.py file
@@ -49,7 +50,7 @@ In this file we initialize the window through which the applciation receives the
 ### constans.py 
 I created this mapping file for keeping track of the tariff requested by the user. The input form translates the user's choice in number to better manage the data (e.g. Private tariff has value equal to 1, National Health Service tariff has value equal to 2). I think it was the easies way to manage this kind of data in the planning phase, giving space eventually to future tariffs addition or deletions.
 ### helpers.py
-It contains all the function useful to create the form and manage the input. The main function is called "createForm" and draws the form window. The other principal function is "submit", that sends the data to "createDataForExcel" function of the excelCreation package. If something goes wrong, the function returns an error window, otherwise the function terminates correctly displaying a information message that ends the application.
+It contains all the function useful to create the form and manage the input. The main function is called "createForm" and draws the form window. The other principal function is "submit", that sends the data to "createDataForExcel" function of the excelCreation package. If something goes wrong, the function returns an error window, otherwise the function terminates correctly displaying a information message that ends the application. I used the `tkinter` library for the window and the management of messages for the user.
 
 ## sampleTariff.xslx
 The file Excel is divided in two sheets: private tariff and SSN (= NHS for UK) tariff. Every sheet has a list of exemplicative tariffs and their percentage of discount. 
